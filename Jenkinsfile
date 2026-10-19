@@ -1,8 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Clone Code') {
-            steps { git branch: 'main', url: 'https://github.com/blackcatlegion/devops-practice.git' }
+        steps { git branch: 'main', url: 'https://github.com/BlackCatLegion/demo-devops2.git' }
         }
         stage('Build') {
             steps { sh 'mvn clean compile' }
